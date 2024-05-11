@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-nav">
+                <h2 class="titulo-container">Waterdrop</h2>
+                <li class="li-container">
+                    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">Insights</a>
+                    <a href="">Locations</a>
+                </li>
+                <li class="li-btn">
+                    <button class="btn">Sign In</button>
+                    <button class="btn btn-secundario">Sign Up</button>
+                </li>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form action="">
+            <div class="formulario">
+                <div>
+                    <h1 class="titulo-login">Login</h1>
+                </div>
+                <div class="formulario-input">
+                    <label for="email" id="email"></label>
+                    <input type="email" placeholder="Email" id="email" required>
+                    <label for="password" id="senha"></label>
+                    <input type="password" placeholder="Senha" id="senha" required oninvalid="this.setCustomValidity('Preencha este campo')">
+                </div>
+                <div class="checkbox-style">
+                    <input type="checkbox" class="box-style">
+                    <label for="checkbox" class="box-remember">Remember Me</label>
+                </div>
+                <button class="btn-login" onclick=validar()>LOGIN</button>
+                <a href="">Esqueci a senha</a>
+            </div>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
